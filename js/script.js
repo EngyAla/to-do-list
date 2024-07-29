@@ -20,7 +20,27 @@ button1.addEventListener("click", function addTask() {
     }
     inputBox.value = "";
 });
+inputBox.addEventListener("keydown",function(event){
+    if(event.key === "Enter"){
+        if (inputBox.value === "") {
+            alert("you should add task");
+        } 
+        else {
+            console.log(inputBox.value);
+            var unrealicon = document.createElement("li");
+            unrealicon.className = "unrealicon";
+            unrealicon.innerHTML = inputBox.value;
+            list_container.appendChild(unrealicon);
+            unrealicon.style.display = "block";
+            var span = document.createElement("span");
+            span.id = "span1"
+            unrealicon.appendChild(span);
+            
+        }
+        inputBox.value = "";
 
+    }
+})
 list_container.addEventListener("click", function (ele) {
     if(ele.target.tagName===("LI")){
         var span2 = document.createElement("span")
@@ -43,6 +63,7 @@ list_container.addEventListener("click", function (ele) {
     }
     
 });
+console.log(screen.width)
 
 
 

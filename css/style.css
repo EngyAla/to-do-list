@@ -97,3 +97,24 @@ ul .unrealicon{
     left: -30px;
     top: 1px;
 }
+
+@media (max-width:599px) {
+    .unrealicon #span1::after{
+        
+        left: 380px;
+    }
+}
+@media (min-width:600px) and
+(max-width:899px){
+    .unrealicon #span1::after{
+        
+        left: 640px;
+    }
+}
+@media (min-width:900px) and
+(max-width:1199px){
+    .unrealicon #span1::after{
+        
+        left: 780px;
+    }
+}
