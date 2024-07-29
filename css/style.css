@@ -101,7 +101,7 @@ ul .unrealicon{
 @media (max-width:599px) {
     .unrealicon #span1::after{
         
-        left: 380px;
+        left: 330px;
     }
 }
 @media (min-width:600px) and
